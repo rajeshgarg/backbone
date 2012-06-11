@@ -1,0 +1,16 @@
+# Schema as of June 12, 2006 15:45 (schema version 7)
+#
+# Table name: orders
+#
+#  id       :integer(11)   not null, primary key
+#  name     :string(255)   
+#  address  :text          
+#  email    :string(255)   
+#  pay_type :string(10)    
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+first:
+  id: 1
+another:
+  id: 2

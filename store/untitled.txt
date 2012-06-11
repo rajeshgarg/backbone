@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>application.rb</title>
+	<style type="text/css">
+/* Stylesheet generated from TextMate theme
+ *
+ * Mac Classic
+ * 
+ *
+ */
+
+/* Mostly to improve view within the TextMate HTML viewer */
+body {
+	margin: 0;
+	padding: 0;
+}
+
+pre.textmate-source {
+	margin: 0;
+	padding: 0 0 0 2px;
+	font-family: Monaco, monospace;
+	font-size: 11px;
+	line-height: 1.3em;
+	word-wrap: break-word;
+	white-space: pre;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+}
+
+pre.textmate-source.mac_classic {
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+pre.textmate-source .linenum {
+	width: 75px;
+	padding: 0.1em 1em 0.2em 0;
+	color: #888;
+	background-color: #eee;
+}
+pre.textmate-source.mac_classic span {
+   padding-top: 0.2em;
+   padding-bottom: 0.1em;
+}
+pre.textmate-source.mac_classic ::selection {
+	background-color: #F7FF85;
+}
+/* Comment */
+pre.textmate-source.mac_classic .comment {
+	color: #0066FF;
+	font-style: italic;
+}
+
+/* Keyword */
+pre.textmate-source.mac_classic .keyword, pre.textmate-source.mac_classic .storage {
+	color: #0000FF;
+	font-weight: bold;
+}
+
+/* Number */
+pre.textmate-source.mac_classic .constant_numeric {
+	color: #0000CD;
+}
+
+/* User-defined constant */
+pre.textmate-source.mac_classic .constant {
+	color: #C5060B;
+	font-weight: bold;
+}
+
+/* Built-in constant */
+pre.textmate-source.mac_classic .constant_language {
+	color: #585CF6;
+	font-weight: bold;
+}
+
+/* Variable */
+pre.textmate-source.mac_classic .variable_language, pre.textmate-source.mac_classic .variable_other {
+	color: #318495;
+}
+
+/* String */
+pre.textmate-source.mac_classic .string {
+	color: #036A07;
+}
+
+/* String interpolation */
+pre.textmate-source.mac_classic .constant_character_escape, pre.textmate-source.mac_classic .string .source {
+	color: #26B31A;
+}
+
+/* Preprocessor line */
+pre.textmate-source.mac_classic .meta_preprocessor {
+	color: #1A921C;
+}
+
+/* Preprocessor directive */
+pre.textmate-source.mac_classic .keyword_control_import {
+	color: #0C450D;
+	font-weight: bold;
+}
+
+/* Function name */
+pre.textmate-source.mac_classic .entity_name_function, pre.textmate-source.mac_classic .keyword_other_name-of-parameter_objc {
+	color: #0000A2;
+	font-weight: bold;
+}
+
+/* Class name */
+pre.textmate-source.mac_classic .entity_name_class {
+	text-decoration: underline;
+}
+
+/* Inherited class name */
+pre.textmate-source.mac_classic .entity_other_inherited-class {
+	font-style: italic;
+}
+
+/* Function parameter */
+pre.textmate-source.mac_classic .variable_parameter {
+	font-style: italic;
+}
+
+/* Function argument and result types */
+pre.textmate-source.mac_classic .storage_type_method {
+	color: #70727E;
+}
+
+/* Section */
+pre.textmate-source.mac_classic .meta_section .entity_name_section, pre.textmate-source.mac_classic .declaration_section .entity_name_section {
+	font-style: italic;
+}
+
+/* Library function */
+pre.textmate-source.mac_classic .support_function {
+	color: #3C4C72;
+	font-weight: bold;
+}
+
+/* Library object */
+pre.textmate-source.mac_classic .support_class, pre.textmate-source.mac_classic .support_type {
+	color: #6D79DE;
+	font-weight: bold;
+}
+
+/* Library constant */
+pre.textmate-source.mac_classic .support_constant {
+	color: #06960E;
+	font-weight: bold;
+}
+
+/* Library variable */
+pre.textmate-source.mac_classic .support_variable {
+	color: #21439C;
+	font-weight: bold;
+}
+
+/* JS: Operator */
+pre.textmate-source.mac_classic .keyword_operator_js {
+	color: #687687;
+}
+
+/* Invalid */
+pre.textmate-source.mac_classic .invalid {
+	color: #FFFFFF;
+	background-color: #990000;
+}
+
+/* Invalid trailing whitespace */
+pre.textmate-source.mac_classic .invalid_deprecated_trailing-whitespace {
+	background-color: #FFD0D0;
+}
+
+/* Embedded source */
+pre.textmate-source.mac_classic .text .source, pre.textmate-source.mac_classic .string_unquoted {
+	background-color: rgba(66, 127, 245, 0.19);
+}
+
+/* Markup XML declaration */
+pre.textmate-source.mac_classic .meta_tag_preprocessor_xml {
+	color: #68685B;
+}
+
+/* Markup DOCTYPE */
+pre.textmate-source.mac_classic .meta_tag_sgml_doctype, pre.textmate-source.mac_classic .meta_tag_sgml_doctype .entity, pre.textmate-source.mac_classic .meta_tag_sgml_doctype .string, pre.textmate-source.mac_classic .meta_tag_preprocessor_xml, pre.textmate-source.mac_classic .meta_tag_preprocessor_xml .entity, pre.textmate-source.mac_classic .meta_tag_preprocessor_xml .string {
+	color: #888888;
+}
+
+/* Markup DTD */
+pre.textmate-source.mac_classic .string_quoted_docinfo_doctype_DTD {
+	font-style: italic;
+}
+
+/* Markup tag */
+pre.textmate-source.mac_classic .meta_tag, pre.textmate-source.mac_classic .declaration_tag {
+	color: #1C02FF;
+}
+
+/* Markup name of tag */
+pre.textmate-source.mac_classic .entity_name_tag {
+	font-weight: bold;
+}
+
+/* Markup tag attribute */
+pre.textmate-source.mac_classic .entity_other_attribute-name {
+	font-style: italic;
+}
+
+/* Markup: Heading */
+pre.textmate-source.mac_classic .markup_heading {
+	color: #0C07FF;
+	font-weight: bold;
+}
+
+/* Markup: Quote */
+pre.textmate-source.mac_classic .markup_quote {
+	color: #000000;
+	font-style: italic;
+}
+
+/* Markup: List */
+pre.textmate-source.mac_classic .markup_list {
+	color: #B90690;
+}
+
+
+
+	</style>
+</head>
+
+<body><pre class="textmate-source mac_classic"><span class='linenum'>    1</span> <span class="source source_ruby source_ruby_rails"><span class="meta meta_rails meta_rails_controller"><span class="meta meta_class meta_class_ruby"><span class="keyword keyword_control keyword_control_class keyword_control_class_ruby">class</span> <span class="entity entity_name entity_name_type entity_name_type_class entity_name_type_class_ruby">ApplicationController<span class="entity entity_other entity_other_inherited-class entity_other_inherited-class_ruby"> &lt; ActionController::Base</span></span></span>
+<span class='linenum'>    2</span>   
+<span class='linenum'>    3</span>   <span class="keyword keyword_other keyword_other_special-method keyword_other_special-method_ruby">include</span> <span class="variable variable_other variable_other_constant variable_other_constant_ruby">ExceptionNotifiable</span>
+<span class='linenum'>    4</span>   <span class="keyword keyword_other keyword_other_special-method keyword_other_special-method_ruby">include</span> <span class="variable variable_other variable_other_constant variable_other_constant_ruby">SslRequirement</span>
+<span class='linenum'>    5</span>   
+<span class='linenum'>    6</span>   <span class="support support_function support_function_actionpack support_function_actionpack_rails">before_filter</span> <span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:find_current_user</span>
+<span class='linenum'>    7</span>   
+<span class='linenum'>    8</span>   <span class="support support_function support_function_actionpack support_function_actionpack_rails">filter_parameter_logging</span> <span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:password</span>, <span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:login</span>, <span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:user</span>, <span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:order</span>
+<span class='linenum'>    9</span>   
+<span class='linenum'>   10</span> <span class="keyword keyword_other keyword_other_special-method keyword_other_special-method_ruby">protected</span>
+<span class='linenum'>   11</span> 
+<span class='linenum'>   12</span> <span class="comment comment_line comment_line_number-sign comment_line_number-sign_ruby">  # Overridden from SslRequirement to allow local requests
+</span><span class='linenum'>   13</span> <span class="meta meta_function meta_function_method meta_function_method_without-arguments meta_function_method_without-arguments_ruby">  <span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">ssl_required?</span></span>
+<span class='linenum'>   14</span>     <span class="keyword keyword_control keyword_control_pseudo-method keyword_control_pseudo-method_ruby">return</span> <span class="constant constant_language constant_language_ruby">false</span> <span class="keyword keyword_control keyword_control_ruby">if</span> local_request?
+<span class='linenum'>   15</span>     (<span class="variable variable_language variable_language_ruby">self</span>.class.read_inheritable_attribute(<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:ssl_required_actions</span>) || []).include?(action_name.to_sym)
+<span class='linenum'>   16</span>   <span class="keyword keyword_control keyword_control_ruby">end</span>
+<span class='linenum'>   17</span>   
+<span class='linenum'>   18</span> <span class="keyword keyword_other keyword_other_special-method keyword_other_special-method_ruby">private</span>
+<span class='linenum'>   19</span> 
+<span class='linenum'>   20</span> <span class="meta meta_function meta_function_method meta_function_method_without-arguments meta_function_method_without-arguments_ruby">  <span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">user_logged_in?</span></span>
+<span class='linenum'>   21</span>     <span class="variable variable_other variable_other_readwrite variable_other_readwrite_instance variable_other_readwrite_instance_ruby">@current_user</span>
+<span class='linenum'>   22</span>   <span class="keyword keyword_control keyword_control_ruby">end</span>
+<span class='linenum'>   23</span>   
+<span class='linenum'>   24</span> <span class="meta meta_function meta_function_method meta_function_method_without-arguments meta_function_method_without-arguments_ruby">  <span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">admin_logged_in?</span></span>
+<span class='linenum'>   25</span>     user_logged_in? &amp;&amp; <span class="variable variable_other variable_other_readwrite variable_other_readwrite_instance variable_other_readwrite_instance_ruby">@current_user</span>.is_admin?
+<span class='linenum'>   26</span>   <span class="keyword keyword_control keyword_control_ruby">end</span>
+<span class='linenum'>   27</span>   
+<span class='linenum'>   28</span> <span class="meta meta_function meta_function_method meta_function_method_without-arguments meta_function_method_without-arguments_ruby">  <span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">author_logged_in?</span></span>
+<span class='linenum'>   29</span>     user_logged_in? &amp;&amp; <span class="variable variable_other variable_other_readwrite variable_other_readwrite_instance variable_other_readwrite_instance_ruby">@current_user</span>.is_author?
+<span class='linenum'>   30</span>   <span class="keyword keyword_control keyword_control_ruby">end</span>
+<span class='linenum'>   31</span>   
+<span class='linenum'>   32</span> <span class="meta meta_function meta_function_method meta_function_method_without-arguments meta_function_method_without-arguments_ruby">  <span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">guest?</span></span>
+<span class='linenum'>   33</span>     session[<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:guest</span>]
+<span class='linenum'>   34</span>   <span class="keyword keyword_control keyword_control_ruby">end</span>
+<span class='linenum'>   35</span>   
+<span class='linenum'>   36</span> <span class="meta meta_function meta_function_method meta_function_method_without-arguments meta_function_method_without-arguments_ruby">  <span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">find_current_user</span></span>
+<span class='linenum'>   37</span>     <span class="variable variable_other variable_other_readwrite variable_other_readwrite_instance variable_other_readwrite_instance_ruby">@current_user</span> = <span class="constant constant_language constant_language_ruby">nil</span>
+<span class='linenum'>   38</span>     <span class="keyword keyword_control keyword_control_ruby">if</span> session[<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:user_login</span>]
+<span class='linenum'>   39</span>       <span class="variable variable_other variable_other_readwrite variable_other_readwrite_instance variable_other_readwrite_instance_ruby">@current_user</span> = <span class="support support_class support_class_ruby">User</span>.find_by_login(session[<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:user_login</span>])
+<span class='linenum'>   40</span>     <span class="keyword keyword_control keyword_control_ruby">else</span>
+<span class='linenum'>   41</span>       <span class="variable variable_other variable_other_readwrite variable_other_readwrite_instance variable_other_readwrite_instance_ruby">@current_user</span> = login_from_cookie
+<span class='linenum'>   42</span>     <span class="keyword keyword_control keyword_control_ruby">end</span>
+<span class='linenum'>   43</span>     <span class="variable variable_other variable_other_readwrite variable_other_readwrite_instance variable_other_readwrite_instance_ruby">@current_user</span>
+<span class='linenum'>   44</span>   <span class="keyword keyword_control keyword_control_ruby">end</span>
+<span class='linenum'>   45</span>   
+<span class='linenum'>   46</span> <span class="meta meta_function meta_function_method meta_function_method_without-arguments meta_function_method_without-arguments_ruby">  <span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">login_from_cookie</span></span>
+<span class='linenum'>   47</span>     user = <span class="constant constant_language constant_language_ruby">nil</span>
+<span class='linenum'>   48</span>     <span class="keyword keyword_control keyword_control_ruby">if</span> cookies[<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:remember_me</span>]
+<span class='linenum'>   49</span>       <span class="keyword keyword_control keyword_control_ruby">if</span> token = <span class="support support_class support_class_ruby">LoginToken</span>.find_for(cookies[<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:remember_me</span>])
+<span class='linenum'>   50</span>         user = token.user
+<span class='linenum'>   51</span>         session[<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:user_login</span>] = user.login
+<span class='linenum'>   52</span>         flash[<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:notice</span>] = <span class="string string_quoted string_quoted_double string_quoted_double_ruby">"Welcome back, <span class="source source_ruby source_ruby_embedded source_ruby_embedded_source">#{user.name_or_login}</span>!"</span>
+<span class='linenum'>   53</span>       <span class="keyword keyword_control keyword_control_ruby">end</span>
+<span class='linenum'>   54</span>     <span class="keyword keyword_control keyword_control_ruby">end</span> 
+<span class='linenum'>   55</span>     user
+<span class='linenum'>   56</span>   <span class="keyword keyword_control keyword_control_ruby">end</span>
+<span class='linenum'>   57</span>   
+<span class='linenum'>   58</span> <span class="meta meta_function meta_function_method meta_function_method_with-arguments meta_function_method_with-arguments_ruby">  <span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">remember_me</span>(<span class="variable variable_parameter variable_parameter_function variable_parameter_function_ruby">user</span>)</span>
+<span class='linenum'>   59</span>     cookies[<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:remember_me</span>] = {<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:value</span> =&gt; user.remember_login.value, 
+<span class='linenum'>   60</span>                              <span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:expires</span> =&gt; <span class="constant constant_numeric constant_numeric_ruby">25.</span>years.from_now}
+<span class='linenum'>   61</span>   <span class="keyword keyword_control keyword_control_ruby">end</span>
+<span class='linenum'>   62</span> 
+<span class='linenum'>   63</span> <span class="meta meta_function meta_function_method meta_function_method_without-arguments meta_function_method_without-arguments_ruby">  <span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">save_location</span></span>
+<span class='linenum'>   64</span>     <span class="keyword keyword_control keyword_control_ruby">unless</span> action_name.to_sym == <span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:logout</span>
+<span class='linenum'>   65</span>       session[<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:return_to</span>] = request.request_uri 
+<span class='linenum'>   66</span>     <span class="keyword keyword_control keyword_control_ruby">end</span>
+<span class='linenum'>   67</span>   <span class="keyword keyword_control keyword_control_ruby">end</span>
+<span class='linenum'>   68</span> 
+<span class='linenum'>   69</span> <span class="meta meta_function meta_function_method meta_function_method_with-arguments meta_function_method_with-arguments_ruby">  <span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">redirect_to_back</span>(<span class="variable variable_parameter variable_parameter_function variable_parameter_function_ruby">fall_back = <span class="constant constant_language constant_language_ruby">nil</span></span>)</span>
+<span class='linenum'>   70</span>     session[<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:return_to</span>] = <span class="constant constant_language constant_language_ruby">nil</span> <span class="keyword keyword_control keyword_control_ruby">if</span> return_to = session[<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:return_to</span>]
+<span class='linenum'>   71</span>     <span class="support support_function support_function_actionpack support_function_actionpack_rails">redirect_to</span> return_to || fall_back || <span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:store_home_url</span>
+<span class='linenum'>   72</span>   <span class="keyword keyword_control keyword_control_ruby">end</span>
+<span class='linenum'>   73</span>   
+<span class='linenum'>   74</span> <span class="meta meta_function meta_function_method meta_function_method_with-arguments meta_function_method_with-arguments_ruby">  <span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">redirect_to_index</span>(<span class="variable variable_parameter variable_parameter_function variable_parameter_function_ruby">msg = <span class="constant constant_language constant_language_ruby">nil</span></span>)</span>
+<span class='linenum'>   75</span>     flash[<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:notice</span>] = msg <span class="keyword keyword_control keyword_control_ruby">if</span> msg
+<span class='linenum'>   76</span>     <span class="support support_function support_function_actionpack support_function_actionpack_rails">redirect_to</span> <span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:action</span> =&gt; <span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:index</span>
+<span class='linenum'>   77</span>   <span class="keyword keyword_control keyword_control_ruby">end</span>
+<span class='linenum'>   78</span> 
+<span class='linenum'>   79</span> <span class="comment comment_line comment_line_number-sign comment_line_number-sign_ruby">  # Find a title given the short name (eg. rails, svn, ...)
+</span><span class='linenum'>   80</span> <span class="meta meta_function meta_function_method meta_function_method_without-arguments meta_function_method_without-arguments_ruby">  <span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">look_up_short_name</span></span>
+<span class='linenum'>   81</span>     <span class="variable variable_other variable_other_readwrite variable_other_readwrite_instance variable_other_readwrite_instance_ruby">@title</span> = params[<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:short_name</span>] 
+<span class='linenum'>   82</span>     <span class="variable variable_other variable_other_readwrite variable_other_readwrite_instance variable_other_readwrite_instance_ruby">@title</span> = <span class="support support_class support_class_ruby">Title</span>.find_by_short_name(<span class="variable variable_other variable_other_readwrite variable_other_readwrite_instance variable_other_readwrite_instance_ruby">@title</span>) <span class="keyword keyword_control keyword_control_ruby">if</span> <span class="variable variable_other variable_other_readwrite variable_other_readwrite_instance variable_other_readwrite_instance_ruby">@title</span>
+<span class='linenum'>   83</span>     <span class="support support_function support_function_actionpack support_function_actionpack_rails">redirect_to</span> store_home_url <span class="keyword keyword_control keyword_control_ruby">unless</span> <span class="variable variable_other variable_other_readwrite variable_other_readwrite_instance variable_other_readwrite_instance_ruby">@title</span>
+<span class='linenum'>   84</span>   <span class="keyword keyword_control keyword_control_ruby">end</span>
+<span class='linenum'>   85</span>     
+<span class='linenum'>   86</span> <span class="meta meta_function meta_function_method meta_function_method_without-arguments meta_function_method_without-arguments_ruby">  <span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">local_request?</span></span>
+<span class='linenum'>   87</span>     [<span class="string string_quoted string_quoted_double string_quoted_double_ruby">"127.0.0.1"</span>, <span class="string string_quoted string_quoted_double string_quoted_double_ruby">"0.0.0.0"</span>].include?(request.remote_addr)
+<span class='linenum'>   88</span>   <span class="keyword keyword_control keyword_control_ruby">end</span>
+<span class='linenum'>   89</span>   
+<span class='linenum'>   90</span> <span class="meta meta_function meta_function_method meta_function_method_with-arguments meta_function_method_with-arguments_ruby">  <span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">paginate_collection</span>(<span class="variable variable_parameter variable_parameter_function variable_parameter_function_ruby">collection, options = {}</span>)</span>
+<span class='linenum'>   91</span>     default_options = {<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:per_page</span> =&gt; <span class="variable variable_other variable_other_constant variable_other_constant_ruby">MAX_ITEMS_PER_PAGE</span>, <span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:page</span> =&gt; params[<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:page</span>]}
+<span class='linenum'>   92</span>     options = default_options.merge options
+<span class='linenum'>   93</span>     pages = <span class="support support_class support_class_ruby">Paginator</span>.<span class="keyword keyword_other keyword_other_special-method keyword_other_special-method_ruby">new</span> <span class="variable variable_language variable_language_ruby">self</span>, collection.size, options[<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:per_page</span>], options[<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:page</span>]
+<span class='linenum'>   94</span>     first = pages.current.offset
+<span class='linenum'>   95</span>     last = [first + options[<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:per_page</span>], collection.size].min
+<span class='linenum'>   96</span>     slice = collection[first...last]
+<span class='linenum'>   97</span>     <span class="keyword keyword_control keyword_control_pseudo-method keyword_control_pseudo-method_ruby">return</span> pages, slice
+<span class='linenum'>   98</span>   <span class="keyword keyword_control keyword_control_ruby">end</span>
+<span class='linenum'>   99</span>   
+</span><span class='linenum'>  100</span> <span class="keyword keyword_control keyword_control_ruby">end</span>
+</span><span class='linenum'>  101</span> </pre>
+</body>
+</html>

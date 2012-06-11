@@ -1,0 +1,17 @@
+# Schema as of June 12, 2006 15:45 (schema version 7)
+#
+# Table name: users
+#
+#  id              :integer(11)   not null, primary key
+#  name            :string(255)   
+#  hashed_password :string(255)   
+#  salt            :string(255)   
+#
+
+<% SALT = "NaCl" unless defined?(SALT) %>
+
+dave:
+  id:   1
+  name: dave
+  salt: <%= SALT %>
+  hashed_password: <%= User.encrypted_password('secret', SALT) %>

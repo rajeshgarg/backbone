@@ -1,0 +1,70 @@
+<%#
+Copyright (c) 2006 The Pragmatic Programmers, LLC.
+Reproduced from the book "Agile Web Development with Rails, 2nd Ed.",
+published by The Pragmatic Bookshelf.
+Available from www.pragmaticprogrammer.com/titles/rails2
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this source code (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and/or sell copies of the Software,
+and to permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+1) This Software cannot be used in any training course or seminar, whether
+presented live, via video, audio, screencast, or any other media, without
+explicit prior permission from the publisher.
+
+2) The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+%>
+
+<div id="product-list">
+  <h1>Product Listing</h1>
+
+  <table cellpadding="5" cellspacing="0">
+  <% for product in @products %>
+    <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+
+      <td>
+        <img class="list-image" src="<%= product.image_url %>"/>
+      </td>
+
+      <td width="60%">
+        <span class="list-title"><%= h(product.title) %></span><br />
+        <%= h(truncate(product.description, 80)) %>
+      </td>
+
+      <td class="list-actions">
+        <%= link_to 'Show', :action => 'show', :id => product %><br/>
+        <%= link_to 'Edit', :action => 'edit', :id => product %><br/>
+        <%= link_to 'Destroy', { :action  => 'destroy', :id => product },
+                                 :confirm => "Are you sure?",
+                                 :method  => :post %>
+      </td>
+    </tr>
+  <% end %>
+  </table>
+</div>
+
+<%=  if @product_pages.current.previous 
+       link_to("Previous page", { :page => @product_pages.current.previous })
+     end
+%>
+
+<%= if @product_pages.current.next 
+      link_to("Next page", { :page => @product_pages.current.next })
+    end
+%>
+
+<br />
+
+<%= link_to 'New product', :action => 'new' %>

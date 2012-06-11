@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Mac OS X (vers 1st December 2004), see www.w3.org">
+
+  <title>Pragprog Books Online Store</title>
+  <!-- START:stylesheet -->
+  <link href="/stylesheets/depot.css?1155677482" media="all" rel=
+  "Stylesheet" type="text/css"><!-- END:stylesheet -->
+
+<script src="/javascripts/prototype.js?1155677482" type=
+"text/javascript">
+</script>
+<script src="/javascripts/effects.js?1155677482" type=
+"text/javascript">
+</script>
+<script src="/javascripts/dragdrop.js?1155677482" type=
+"text/javascript">
+</script>
+<script src="/javascripts/controls.js?1155677482" type=
+"text/javascript">
+</script>
+<script src="/javascripts/application.js?1155677482" type=
+"text/javascript">
+</script>
+</head><!-- END:jit -->
+
+<body id="store">
+  <div id="banner">
+    <img src="/images/logo.png"> Pragmatic Bookshelf
+  </div>
+
+  <div id="columns">
+    <div id="side">
+      <!-- START:hidden_div -->
+
+      <div id="cart">
+        <div class="cart-title">
+          Your Cart
+        </div>
+
+        <table>
+          <tr>
+            <td>1&times;</td>
+
+            <td>Pragmatic Project Automation</td>
+
+            <td class="item-price">$29.95</td>
+          </tr>
+
+          <tr>
+            <td>1&times;</td>
+
+            <td>Pragmatic Unit Testing (C#)</td>
+
+            <td class="item-price">$27.75</td>
+          </tr>
+
+          <tr class="total-line">
+            <td colspan="2">Total</td>
+
+            <td class="total-cell">$57.70</td>
+          </tr>
+        </table>
+
+        <form method="post" action="/store/checkout" class=
+        "button-to">
+          <div>
+            <input type="submit" value="Checkout">
+          </div>
+        </form>
+
+        <form method="post" action="/store/empty_cart" class=
+        "button-to">
+          <div>
+            <input type="submit" value="Empty cart">
+          </div>
+        </form>
+      </div><!-- END:hidden_div -->
+      <a href="http://www....">Home</a><br>
+      <a href="http://www..../faq">Questions</a><br>
+      <a href="http://www..../news">News</a><br>
+      <a href="http://www..../contact">Contact</a><br>
+    </div>
+
+    <div id="main">
+      <h1>Your Pragmatic Catalog</h1>
+
+      <div class="entry">
+        <img src="/images/auto.jpg">
+
+        <h3>Pragmatic Project Automation</h3>
+
+        <p><em>Pragmatic Project Automation</em> shows you how to
+        improve the consistency and repeatability of your project's
+        procedures using automation to reduce risk and errors.</p>
+
+        <p>Simply put, we're going to put this thing called a
+        computer to work for you doing the mundane (but important)
+        project stuff. That means you'll have more time and energy
+        to do the really exciting---and difficult---stuff, like
+        writing quality code.</p>
+
+        <div class="price-line">
+          <span class="price">$29.95</span> 
+          <!-- START:form_remote_tag -->
+
+          <form action="/store/add_to_cart/1" method="post"
+          onsubmit=
+          "new Ajax.Request('/store/add_to_cart/1', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+          <input name="commit" type="submit" value="Add to Cart">
+          </form><!-- END:form_remote_tag -->
+        </div>
+      </div>
+
+      <div class="entry">
+        <img src="/images/utc.jpg">
+
+        <h3>Pragmatic Unit Testing (C#)</h3>
+
+        <p>Pragmatic programmers use feedback to drive their
+        development and personal processes. The most valuable
+        feedback you can get while coding comes from unit
+        testing.</p>
+
+        <p>Without good tests in place, coding can become a
+        frustrating game of "whack-a-mole." That's the carnival
+        game where the player strikes at a mechanical mole; it
+        retreats and another mole pops up on the opposite side of
+        the field. The moles pop up and down so fast that you end
+        up flailing your mallet helplessly as the moles continue to
+        pop up where you least expect them.</p>
+
+        <div class="price-line">
+          <span class="price">$27.75</span> 
+          <!-- START:form_remote_tag -->
+
+          <form action="/store/add_to_cart/3" method="post"
+          onsubmit=
+          "new Ajax.Request('/store/add_to_cart/3', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+          <input name="commit" type="submit" value="Add to Cart">
+          </form><!-- END:form_remote_tag -->
+        </div>
+      </div>
+
+      <div class="entry">
+        <img src="/images/svn.jpg">
+
+        <h3>Pragmatic Version Control</h3>
+
+        <p>This book is a recipe-based approach to using Subversion
+        that will get you up and running quickly---and correctly.
+        All projects need version control: it's a foundational
+        piece of any project's infrastructure. Yet half of all
+        project teams in the U.S. don't use any version control at
+        all. Many others don't use it well, and end up experiencing
+        time-consuming problems.</p>
+
+        <div class="price-line">
+          <span class="price">$28.50</span> 
+          <!-- START:form_remote_tag -->
+
+          <form action="/store/add_to_cart/2" method="post"
+          onsubmit=
+          "new Ajax.Request('/store/add_to_cart/2', {asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;">
+          <input name="commit" type="submit" value="Add to Cart">
+          </form><!-- END:form_remote_tag -->
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

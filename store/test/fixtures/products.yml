@@ -1,0 +1,27 @@
+# Schema as of June 12, 2006 15:45 (schema version 7)
+#
+# Table name: products
+#
+#  id          :integer(11)   not null, primary key
+#  title       :string(255)   
+#  description :text          
+#  image_url   :string(255)   
+#  price       :integer(11)   default(0)
+#
+
+#START:ruby
+ruby_book:
+  id:          1
+  title:       Programming Ruby
+  description: Dummy description
+  price:       1234
+  image_url:   ruby.png
+#END:ruby
+
+rails_book:
+  id:          2
+  title:       Agile Web Development with Rails
+  description: Dummy description
+  price:       2345
+  image_url:   rails.png
+  

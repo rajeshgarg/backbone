@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><!--Copyright (c) 2006 The Pragmatic Programmers, LLC.
+Reproduced from the book "Agile Web Development with Rails, 2nd Ed.",
+published by The Pragmatic Bookshelf.
+Available from www.pragmaticprogrammer.com/titles/rails2
+
+Permission is hereby granted, free of charge, to any person obtaining  a copy
+of this source code (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use, copy,  modify,
+merge, publish, distribute, sublicense, and/or sell copies of the  Software,
+and to permit persons to whom the Software is furnished to do so,  subject to
+the following conditions:
+
+1) This Software cannot be used in any training course or seminar,  whether
+presented live, via video, audio, screencast, or any other media,  without
+explicit prior permission from the publisher.
+
+2) The above copyright notice and this permission notice shall be  included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,  EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT  SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,  ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER  DEALINGS IN
+  THE SOFTWARE. --><title>README</title></head><body>
+    <h2>README</h2>
+    <p>The sample application is taken from <i>Agile Web Development with Rails, 2nd Edition</i>, published by the Pragmatic Bookshelf and reproduced with permission; see the license file for terms of use. Please visit <a href="http://www.pragprog.com/">www.PragmaticProgrammer.com</a> for more great books to help keep you on top of your game.</p>
+
+    <p>The Depot sample application requires the MySQL database server.</p>
+    <h3>Creating the Sample Databases</h3>
+    <p>Before you can run this project, you must create at a minimum
+      the depot_development database, as described below. You can
+    also create the test and production databases if desired.</p>
+    <p><b>To Create the Depot Databases:</b>
+    </p><ol>
+      <li>Open a command window.<br><br></li>
+      <li>If it has not already been started, start the MySQL database server.<br><br></li>
+      <li>Type the following command to create the development database
+        and press Enter.
+        <pre>mysqladmin -u root -p create depot_development</pre>
+        <b>Note:</b> If the root user does not have a required password,
+        omit the <b>-p</b> argument.
+        <br><br>
+      </li>
+      <li>(Optional) Repeat the command to create the <b>depot_test</b> and
+        <b>depot_production</b> databases.
+      </li>
+    </ol>
+
+    <h3>Configuring The Database Environment</h3>
+    <p>The <tt>database.yml</tt> file is already configured to use the MySQL
+      adapter and the three depot databases. You do not need to do
+      any configurations unless the root user requires a password.
+    </p>
+    <p><b>To Specify the Password for the Root User:</b></p>
+    <ol>
+      <li>In the <b>Projects</b> window, expand the <b>Configuration</b> node.<br><br></li>
+      <li>Double-click the <b>database.yml</b> node to open the file in the editor.<br><br></li>
+      <li>In each of the three configurations (development, test,
+        and production), provide the <b>password</b>.
+      <br><br></li>
+      <li><b>Close</b> and <b>save</b> the file.</li>
+    </ol>
+    <h3>Creating the Database Tables</h3>
+    <p>This sample project contains the schema migrations
+    for creating and seeding the database tables.</p>
+    <p><b>To Create the Depot Tables:</b>
+    </p><ul>
+      <li>In the Projects window, right-click the <b>Depot Application</b> project
+        node and choose <b>Migrate Database &gt; To Current Version</b> from the
+        pop-up menu.
+    </li></ul>
+    <h3>Running the Application</h3>
+    <p>You are now ready to run the Depot application.</p>
+    <p><b>To Run the Depot Application:</b></p>
+    <ol>
+      <li>In the <b>Projects window</b> right-click the <b>Depot Application</b>
+        project node and choose Run from the pop-up menu.
+      <br><br></li>
+
+      <li>To view the Admin pages browse to the appropriate URL:<br><br>
+        <ul>
+          <li><b>For the GlassFish admin server.</b>
+            <code>http://localhost:8080/Depot_Application/admin</code>
+          </li>
+          <li><b>For WEBrick and Mongrel.</b>
+            <code>http://localhost:3000/admin </code>
+          </li>
+        </ul><br>
+      </li>
+      <li>Log in using <tt>admin</tt> for the user name,  and <tt>secret</tt> for the password.
+        <br><br>
+      </li>
+      <li>To access the REST interface, enter the following URLs:<br><br>
+        <ul>
+          <li><b>For the GlassFish admin server.</b>
+            <pre>http://localhost:8080/Depot_Application/info/who_bought/1
+http://localhost:8080/Depot_Application/info/who_bought/2
+http://localhost:8080/Depot_Application/info/who_bought/3
+            </pre>
+          </li>
+          <li><b>For WEBrick and Mongrel.</b>
+            <pre>http://localhost:3000/info/who_bought/1
+http://localhost:3000/info/who_bought/2
+http://localhost:3000/info/who_bought/3
+            </pre>
+          </li>
+        </ul>
+    </li></ol>
+
+</body></html>
